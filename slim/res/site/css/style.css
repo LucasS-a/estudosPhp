@@ -1,0 +1,82 @@
+/* CSS */
+*{
+     margin: 0px;
+     padding: 0px;
+}
+body{
+     background-color: black;
+     font-family: Helvetica, arial;
+     color: white;
+}
+header{
+     padding: 10px;
+     height: 100px;
+     background-color: mediumblue;
+     background-image: -moz-linear-gradient( darkblue, royalblue);
+     background-image: -webkit-linear-gradient(darkblue, royalblue);
+
+}
+h1{
+     color: darkmagenta;
+     text-align: center;
+     text-shadow: 1px 1px 1px #515151;
+     padding: 0 0 35px 0;
+}
+p{
+     font-size: 12px;
+     text-shadow: 1px 1px 1px #515151;
+}
+
+footer{
+     height: 65px;
+     background-color: mediumblue;
+     color: black;
+     text-align: center;
+     text-shadow: 1px 1px 1px #111111;
+     padding: 10px 0 0 0;
+     background-image: -moz-linear-gradient(royalblue, darkblue);
+     background-image: -webkit-linear-gradient(royalblue, darkblue);
+}
+
+/* IDs */
+#principal{
+     clear: both;
+     background-size: 100%;
+     min-height: 400px;
+     padding: 75px 0 0 0;
+     background-image: url(universo2.jpg);
+     rgba(0, 0, 0, 0.5);
+}
+#logo{
+     float: left;
+}
+#menu{
+     float: right;
+     margin-top: 35px;
+}
+#menu a{
+     /* retira o sublinhado */
+     text-decoration: none;
+     color: black;
+     text-shadow: 1px 1px #111111;
+     padding: 5px 15px 5px 15px;
+}
+/* hover: propriedade de sobre posição */
+#menu a:hover{
+     background-color: rgba(0.5, 0.5, 1, 0.5);
+     color: mediumblue;
+     text-shadow: 1px 1px 1px black;
+     /* arredonda a borda */
+     border-radius: 10px;
+     /* transição de cor */
+     -webkit-transition: 0.5s;
+}
+/* Class */
+.conteiner{
+     width: 75%;
+     margin: 0 auto;
+}
+.efeitos{
+     background-color: rgba(0, 0, 0, 0.65);
+     padding: 25px 0 50px 0;
+}

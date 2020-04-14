@@ -1,0 +1,24 @@
+{
+    "name": "lucas/slim",
+    "description": "Treinando minhas abilidades com o slim",
+    "type": "project",
+    "authors": [
+        {
+            "name": "LucasS-a",
+            "email": "lucass.a.6991@gmail.com"
+        }
+    ],
+
+    "minimum-stability": "dev",
+
+    "require": {
+         "phpmailer/phpmailer":"5.2.22",
+         "slim/slim": "2.0",
+         "rain/raintpl": "3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hcode\\": "vendor\\hcodebr\\php-classes\\src"
+        }
+    }
+}
