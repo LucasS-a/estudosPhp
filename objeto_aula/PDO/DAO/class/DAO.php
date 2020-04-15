@@ -21,7 +21,7 @@ class DAO extends PDO
      // quando quer passar apenas um parametro
      private function setParam($statment, $key, $value)
      {
-          $statement->bindParam($key, $value);
+          $statment->bindParam($key, $value);
      }
 
      // recebe uma $rawQuery um comando sql, que eu irei tratar

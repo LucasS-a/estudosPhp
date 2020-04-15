@@ -2,34 +2,23 @@
 
 require_once("config.php");
 
-// função que recebe um array e o imprime na tela
-function demonstrar($array)
-{
-     foreach ($array as $key => $value) {
-          // se o value for um array chama a função de forma recursiva
-          if(is_array($value))
-          {
-               demonstrar($value);
-               echo "<br>";
-          }else {
-               echo "$key: $value <br>";
-          }
-     }
-}
 
-// cria  o objeto
-$banco = new DAO();
+/* Carrega um usuario
+$pessoa = new Aluno();
 
-// comando sql
-$sql = "SELECT * FROM Alunos";
+$pessoa->loadById(1);
 
-// o array com parametros
-$params = array();
+echo $pessoa;
+*/
+//--------------------------------------
+/*Carrega uma lista de usuarios
 
-$result = $banco->select($sql, $params);
+$lista = Aluno::getList();
 
-if(is_array($result))
-{
-     demonstrar($result);
-}
+echo $lista;*/
+//-----------------------------------------
+// inseri um novo elemnto no Banco
+$pessoa = new Aluno('margatita', 'margatita@gmail.com','2000-01-01');
+
+
  ?>
